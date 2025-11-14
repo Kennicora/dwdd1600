@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Kennedy Anderson" />
+  <meta name="description" content="Plan your custom rappelling adventure through Utah’s red rock canyons." />
+  <title>Plan Your Adventure | Red Rock Rappels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Red Rock Rappels</h1>
+    <p>Plan your custom rappelling adventure in Utah’s red rock country</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Rappelling Overview</a></li>
+      <li><a href="tools.html">Gear & Tools</a></li>
+      <li><a href="gallery.html">Photo Gallery</a></li>
+      <li><a href="plan.html" class="active">Plan Your Adventure</a></li>
+    </ul>
+  </nav>
+
+  <main>
+  <h1>Plan Your Rappelling Adventure</h1>
+  <p>Tell us about your ideal red rock rappel trip! Fill out the form below to design your custom adventure.</p>
+
+  <!-- REPLACE YOUR OLD FORM WITH THIS -->
+  <form action="thanks.html" method="get">
+    <!-- PERSONAL INFO -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name" class="required">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name">
+
+      <label for="email" class="required">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="(435) 555-0123">
+    </fieldset>
+
+    <!-- TRIP PREFERENCES -->
+    <fieldset>
+      <legend>Adventure Details</legend>
+
+      <label for="location" class="required">Preferred Rappelling Location:</label>
+      <select id="location" name="location" required>
+        <option value="">-- Please choose --</option>
+        <option value="zion">Zion National Park</option>
+        <option value="moab">Moab</option>
+        <option value="escalante">Grand Staircase–Escalante</option>
+      </select>
+
+      <label class="required">Skill Level:</label>
+      <label><input type="radio" name="skill" value="beginner" required> Beginner</label>
+      <label><input type="radio" name="skill" value="intermediate"> Intermediate</label>
+      <label><input type="radio" name="skill" value="advanced"> Advanced</label>
+    </fieldset>
+
+    <!-- GEAR & OPTIONS -->
+    <fieldset>
+      <legend>Gear & Extras</legend>
+
+      <p>Select which items you’ll need to rent:</p>
+      <label><input type="checkbox" name="gear" value="helmet"> Helmet</label>
+      <label><input type="checkbox" name="gear" value="harness"> Harness</label>
+      <label><input type="checkbox" name="gear" value="ropes"> Ropes</label>
+
+      <label for="notes">Additional Requests:</label>
+      <textarea id="notes" name="notes" rows="4" cols="30" placeholder="Tell us about group size, dates, or goals"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit Adventure Plan</button>
+  </form>
+
+
+  <footer>
+    <p>&copy; 2025 · Red Rock Rappels · Web Essentials</p>
+    <p>Page created by Kennedy Anderson · Last updated November 12, 2025</p>
+  </footer>
+</body>
+</html>
