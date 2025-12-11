@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thailand Destinations | Sawasdee Budget Vacations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="destinations">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">SBV</span>
+        <div class="logo-text">
+          <h1>Sawasdee Budget Vacations</h1>
+          <p>Authentic Thailand trips that don’t break the bank</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro container">
+      <h2>Our Favorite Thailand Stops</h2>
+      <p>
+        Every itinerary is different, but these six destinations appear in most of our trips. 
+        All of the photos below are real locations in Thailand — swap them out with your own 
+        images stored in the <code>images</code> folder for your final project.
+      </p>
+    </section>
+
+    <section class="gallery container">
+  <div class="gallery-grid">
+
+    <figure class="gallery-item">
+      <img src="images/bangkok-skyline.jpg" alt="Bangkok skyline at dusk">
+      <figcaption>
+        <p>
+          <strong>Bangkok skyline at dusk</strong><br>
+          Bangkok — Street food, temples, and rooftop sunsets on a budget.
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="images/chiang-mai-temple.jpg" alt="Golden temple in Chiang Mai">
+      <figcaption>
+        <p>
+          <strong>Golden temple in Chiang Mai</strong><br>
+          Chiang Mai — Laid-back northern city with night markets and mountain temples.
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="images/railay-beach.jpg" alt="Limestone cliffs at Railay Beach">
+      <figcaption>
+        <p>
+          <strong>Railay Beach</strong><br>
+          Railay Beach — Dramatic cliffs, turquoise water, and rock-climbing vibes.
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="images/phuket-sunset.jpg" alt="Sunset on a Phuket beach">
+      <figcaption>
+        <p>
+          <strong>Sunset on a Phuket beach</strong><br>
+          Phuket — Easy ferry connections, island-hopping tours, and sunset viewpoints.
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="images/ayutthaya-ruins.jpg" alt="Ancient ruins in Ayutthaya">
+      <figcaption>
+        <p>
+          <strong>Ancient ruins in Ayutthaya</strong><br>
+          Ayutthaya — Ancient capital with crumbling stupas perfect for a day trip.
+        </p>
+      </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+      <img src="images/koh-tao.jpg" alt="Boats at Koh Tao at sunset">
+      <figcaption>
+        <p>
+          <strong>Boats at Koh Tao at sunset</strong><br>
+          Koh Tao — Compact island known for budget-friendly diving courses.
+        </p>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Sawasdee Budget Vacations. Sample student project.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>

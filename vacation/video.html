@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thailand Travel Video | Sawasdee Budget Vacations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="video">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">SBV</span>
+        <div class="logo-text">
+          <h1>Sawasdee Budget Vacations</h1>
+          <p>Authentic Thailand trips that don’t break the bank</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="video.html" class="active">Video</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-intro">
+      <h2>Two Weeks Across Thailand</h2>
+      <p>
+        This video follows a classic route we often recommend for first-time visitors: 
+        Bangkok, Chiang Mai, and the southern islands. Watch for ideas, then tell us 
+        what parts you’d like to build into your own custom itinerary.
+      </p>
+    </section>
+
+    <section class="video-wrapper">
+      <!-- 100% width iframe; height handled by CSS for responsiveness -->
+      <div class="embed-container">
+        <iframe 
+          src="https://www.youtube.com/embed/UEDeptPVNQA" 
+          title="How to travel Thailand | The PERFECT 2 week Itinerary"
+          width="100%" 
+          height="315"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Sawasdee Budget Vacations. Sample student project.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>

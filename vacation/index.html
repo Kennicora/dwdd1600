@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sawasdee Budget Vacations | Thailand Getaways</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">SBV</span>
+        <div class="logo-text">
+          <h1>Sawasdee Budget Vacations</h1>
+          <p>Authentic Thailand trips that don’t break the bank</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>See Thailand for Less, Experience It More</h2>
+        <p>
+          From Bangkok’s night markets to the turquoise bays of Krabi and Phuket, 
+          Sawasdee Budget Vacations designs wallet-friendly itineraries that still feel 
+          unforgettable. We focus on clean guesthouses, local eateries, and meaningful 
+          cultural experiences instead of overpriced tourist traps.
+        </p>
+        <a class="btn btn-primary" href="packages.html">Explore Budget Packages</a>
+        <a class="btn btn-ghost" href="destinations.html">Browse Destinations</a>
+      </div>
+      <div class="hero-image-card">
+        <img src="images/thailand-hero.jpg" alt="Long-tail boats at sunset on a Thai beach">
+        <p class="hero-caption">Sunset long-tail boats in southern Thailand — one of our most popular routes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container grid-3">
+      <article class="info-card">
+        <h3>Who We Are</h3>
+        <p>
+          Sawasdee Budget Vacations is a small travel agency based in Bangkok that has spent 
+          more than ten years sending travelers across Thailand on a shoestring. Our local 
+          guides and trip planners grew up here and know how to stretch every baht.
+        </p>
+      </article>
+      <article class="info-card">
+        <h3>Our Travelers</h3>
+        <p>
+          We work with students, young professionals, and families who want real Thailand 
+          — street food, temples, islands, night trains — without luxury-hotel prices. 
+          If you care more about mango sticky rice than marble lobbies, you’re our people.
+        </p>
+      </article>
+      <article class="info-card">
+        <h3>Why Thailand</h3>
+        <p>
+          Thailand is one of the easiest and most affordable countries in Asia for first-time 
+          travelers. Excellent public transport, guesthouses for every budget, and world-class 
+          beaches mean you can enjoy a two-week adventure for less than a weekend in many 
+          Western cities.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-dark">
+    <div class="container testimonials">
+      <h2>Traveler Stories</h2>
+      <div class="testimonials-grid">
+        <figure class="testimonial">
+          <blockquote>
+            “We spent ten days between Chiang Mai and Krabi and never once felt rushed. 
+            The overnight train, the elephant sanctuary, the island-hopping tour — all within 
+            our student budget.”
+          </blockquote>
+          <figcaption>— Maya &amp; Leo, USA</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>
+            “They found us a Bangkok hotel right by the Skytrain with breakfast included for less 
+            than our phone bill. The floating market day trip was the highlight of our honeymoon.”
+          </blockquote>
+          <figcaption>— Priya &amp; Arjun, India</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>
+            “I wanted temples, beaches, and time to wander on my own. They built a custom route 
+            that used public ferries and local buses. I felt safe, prepared, and never over-scheduled.”
+          </blockquote>
+          <figcaption>— James, UK</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Sawasdee Budget Vacations. Sample student project.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>

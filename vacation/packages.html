@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Packages | Sawasdee Budget Vacations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="packages">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">SBV</span>
+        <div class="logo-text">
+          <h1>Sawasdee Budget Vacations</h1>
+          <p>Authentic Thailand trips that don’t break the bank</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="packages.html" class="active">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-intro">
+      <h2>Sample Thailand Packages</h2>
+      <p>
+        Every trip is customized, but here are three sample packages to give you an idea 
+        of pricing, hotels, and what’s included. Prices are approximate and based on 
+        double occupancy.
+      </p>
+    </section>
+
+    <section class="packages-grid">
+
+      <!-- PACKAGE 1 -->
+      <article class="package-card">
+        <img src="images/bangkok-chiangmai.jpg" alt="Bangkok and Chiang Mai views">
+        <h2>Bangkok &amp; Chiang Mai Starter</h2>
+        <h3>8 Days / 7 Nights — from $899 per person</h3>
+
+        <p>
+          Begin in buzzing Bangkok with a temple tour, canal boat ride, and night market visit. 
+          Then head north to Chiang Mai for mountain temples, a cooking class, and a day at an 
+          ethical elephant sanctuary.
+        </p>
+
+        <p><strong>Destinations:</strong> Bangkok, Chiang Mai</p>
+
+        <p><strong>Hotel (Bangkok):</strong>
+          <a href="https://www.hotelcloverasoke.com/" target="_blank">Hotel Clover Asoke</a>
+        </p>
+
+        <p><strong>Hotel (Chiang Mai):</strong>
+          <a href="https://www.maladeehotel.com/" target="_blank">Maladee Rendezvous Hotel</a>
+        </p>
+
+        <p><strong>Rental car:</strong> Compact car with 
+          <a href="https://www.avisthailand.com/" target="_blank">Avis Thailand</a>
+        </p>
+
+        <p><strong>Approximate cost:</strong> $899 + international airfare</p>
+      </article>
+
+      <!-- PACKAGE 2 -->
+      <article class="package-card">
+        <img src="images/island-hopper.jpg" alt="Aerial view of turquoise water and islands">
+        <h2>Andaman Island Hopper</h2>
+        <h3>10 Days / 9 Nights — from $1,150 per person</h3>
+
+        <p>
+          Fly into Phuket, explore nearby islands, then continue to Railay and Krabi for 
+          kayaking and cliffside viewpoints.
+        </p>
+
+        <p><strong>Destinations:</strong> Phuket, Railay, Krabi</p>
+
+        <p><strong>Hotel (Phuket):</strong>
+          <a href="https://www.katathani.com/" target="_blank">Katathani Phuket Beach Resort</a>
+        </p>
+
+        <p><strong>Hotel (Railay):</strong>
+          <a href="https://www.rayavadee.com/" target="_blank">Rayavadee Resort</a>
+        </p>
+
+        <p><strong>Hotel (Krabi):</strong>
+          <a href="https://www.aonangvilla.com/" target="_blank">Aonang Villa Resort</a>
+        </p>
+
+        <p><strong>Rental car:</strong> Economy rental with 
+          <a href="https://www.hertz.com/" target="_blank">Hertz</a>
+        </p>
+
+        <p><strong>Approximate cost:</strong> $1,150 + international airfare</p>
+      </article>
+
+      <!-- PACKAGE 3 -->
+      <article class="package-card">
+        <img src="images/thailand-loop.jpg" alt="Thailand highlights collage">
+        <h2>Classic Thailand Loop</h2>
+        <h3>14 Days / 13 Nights — from $1,650 per person</h3>
+
+        <p>
+          Bangkok, Ayutthaya, Chiang Mai, and the southern islands — a perfect balance of 
+          culture, food, and relaxing beach days.
+        </p>
+
+        <p><strong>Destinations:</strong> Bangkok, Ayutthaya, Chiang Mai, Koh Tao or Koh Samui</p>
+
+        <p><strong>Hotel (Bangkok):</strong>
+          <a href="https://www.centrepoint.com/silom/" target="_blank">Centre Point Silom Hotel</a>
+        </p>
+
+        <p><strong>Hotel (Chiang Mai):</strong>
+          <a href="https://dechai.com/deco/" target="_blank">De Chai The Deco Chiang Mai</a>
+        </p>
+
+        <p><strong>Hotel (Koh Tao):</strong>
+          <a href="https://www.thedeckskohtao.com/" target="_blank">The Decks Koh Tao</a>
+        </p>
+
+        <p><strong>Rental car:</strong> Optional rental with 
+          <a href="https://www.budget.com/" target="_blank">Budget Car Rental</a>
+        </p>
+
+        <p><strong>Approximate cost:</strong> $1,650 + international airfare</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Sawasdee Budget Vacations. Sample student project.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  </script>
+
+</body>
+</html>

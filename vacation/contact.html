@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Sawasdee Budget Vacations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">SBV</span>
+        <div class="logo-text">
+          <h1>Sawasdee Budget Vacations</h1>
+          <p>Authentic Thailand trips that don’t break the bank</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main container">
+    <section class="page-intro">
+      <h2>Request Your Thailand Trip Plan</h2>
+      <p>
+        Tell us a little about the kind of trip you’re dreaming of and we’ll put together a 
+        sample budget-friendly itinerary. Fields marked with * are required.
+      </p>
+    </section>
+
+    <section class="form-section">
+      <form action="thanks.html" method="get" class="info-form">
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </fieldset>
+
+        <fieldset>
+          <legend>Trip Preferences</legend>
+
+          <label for="trip-type">What kind of trip are you planning?</label>
+          <select id="trip-type" name="trip-type">
+            <option value="first-time">First-time Thailand trip</option>
+            <option value="family">Family holiday</option>
+            <option value="backpacker">Backpacker / gap year</option>
+          </select>
+
+          <p class="field-label">Preferred budget per person (excluding flights) *</p>
+          <div class="radio-row">
+            <label>
+              <input type="radio" name="budget" value="basic" required>
+              Under $800
+            </label>
+            <label>
+              <input type="radio" name="budget" value="mid-range">
+              $800–$1,500
+            </label>
+            <label>
+              <input type="radio" name="budget" value="comfort">
+              $1,500+
+            </label>
+          </div>
+
+          <p class="field-label">Travel style *</p>
+          <div class="radio-row">
+            <label>
+              <input type="radio" name="style" value="slow" required>
+              Slow &amp; relaxed
+            </label>
+            <label>
+              <input type="radio" name="style" value="balanced">
+              Balanced mix
+            </label>
+            <label>
+              <input type="radio" name="style" value="fast">
+              See as much as possible
+            </label>
+          </div>
+
+          <label for="comments">Tell us about your ideal Thailand trip *</label>
+          <textarea id="comments" name="comments" rows="6" required></textarea>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Sawasdee Budget Vacations. Sample student project.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
